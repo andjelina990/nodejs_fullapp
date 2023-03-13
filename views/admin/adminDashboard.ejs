@@ -569,8 +569,8 @@
 
                             <div class="comment-footer">
                                 <span class="text-muted float-right">April 14, 2016</span>
-                                <a href="/admin/savetnik/termini/<%= advisors[i].first_name+" "+advisors[i].last_name %>"
-                                    type="button" class="btn btn-cyan btn-sm">Termin</a>
+                                <a href="/admin/advisor/termins/<%= advisors[i].first_name+" "+advisors[i].last_name %>"
+                                  type="button" class="btn btn-cyan btn-sm">Termini</a>
                                 <button type="button" class="btn btn-success btn-sm">Publish</button>
                                 <button type="button" class="btn btn-danger btn-sm delete-user-btn"
                                 data-id="<%= advisors[i]._id %>">Delete</button>
@@ -908,7 +908,6 @@
        $(".delete-user-btn").on('click', function () {
             let id = $(this).attr('data-id'); // 587587587658
 
-            console.log('first')
             let confirmMsg = confirm("Are you sure ?");
             if (confirmMsg) {
                 $.ajax({

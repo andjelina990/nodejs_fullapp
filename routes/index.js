@@ -7,8 +7,8 @@ router.use('/login', require('../controllers/loginController.js'));
 router.use('/admin', require('./admin'));
 router.use('/logout', require('./logout'));
 
-// router.use('/operater', require('./operater'));
+router.use('/operator', require('./operator'));
 
-// router.use('/savetnik', require('./savetnik'));
+router.use('/advisor', require('./advisor'));
 
 module.exports = router;

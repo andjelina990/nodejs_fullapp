@@ -38,6 +38,10 @@ router.post(
   '/create/products/save',
   require('../controllers/admin/createProduct.js'),
 );
+router.get(
+  '/admin/termins/:name',
+  require('../controllers/admin/advisorTerminsController.js'),
+);
 
 function checkAdmin(req, res, next) {
   let user = req.session.user;

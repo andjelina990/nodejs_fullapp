@@ -1,7 +1,7 @@
 const mongojs = require('mongojs');
 const db = mongojs('fullapp', ['city']);
 
-const deleteGradController = (req, res) => {
+const deleteCityController = (req, res) => {
   let cityId = req.params.cityId;
 
   db.city.remove({ _id: mongojs.ObjectID(cityId) }, (err, docs) => {
@@ -9,4 +9,4 @@ const deleteGradController = (req, res) => {
   });
 };
 
-module.exports = deleteGradController;
+module.exports = deleteCityController;
