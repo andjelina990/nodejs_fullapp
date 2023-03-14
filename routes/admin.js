@@ -39,7 +39,7 @@ router.post(
   require('../controllers/admin/createProduct.js'),
 );
 router.get(
-  '/admin/termins/:name',
+  '/advisor/termins/:name',
   require('../controllers/admin/advisorTerminsController.js'),
 );
 

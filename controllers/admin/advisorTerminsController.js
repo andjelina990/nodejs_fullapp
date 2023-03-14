@@ -9,7 +9,10 @@ const advisorTerminsController = (req, res) => {
 
   db.termins.find({ advisor: name }, (err, termins) => {
     console.log(termins);
-    res.render('admin/advisorTermins');
+    res.render('admin/advisorTermins', {
+      name: name,
+      termins: termins,
+    });
   });
 };
 
